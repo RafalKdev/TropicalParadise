@@ -1,6 +1,7 @@
 @import "./colors";
 @import "./components";
 @import "./mixins";
+@import "./nav";
 
 *::before,
 *::after {
@@ -15,5 +16,4 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  background-color: red;
 }
