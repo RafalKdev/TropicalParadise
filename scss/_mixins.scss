@@ -5,5 +5,11 @@
   height: 3px;
   color: $pure-white;
   transition: width 1s;
-  background-color: red;
+  background-color: $pure-white;
+}
+@mixin heroImages($bgImg) {
+  background-image: $blue-gradient, url($bgImg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
