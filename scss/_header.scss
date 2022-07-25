@@ -37,3 +37,29 @@
   }
 }
 // media
+@media (min-width: 768px) {
+  .white__block {
+    height: 50px;
+    width: 45%;
+  }
+  .header {
+    &__title {
+      font-size: 6rem;
+    }
+    &__text {
+      font-size: 3.5rem;
+    }
+    &__btn {
+      font-size: 1.6rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .burger-btn {
+    top: 50px;
+    right: 50px;
+  }
+  .header {
+    background-image: $blue-gradient, url("../img/her_lg.jpg");
+  }
+}
