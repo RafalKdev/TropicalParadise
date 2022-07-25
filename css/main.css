@@ -4,6 +4,20 @@
   max-width: 1200px;
 }
 
+.white__block {
+  position: absolute;
+  height: 40px;
+  width: 60%;
+  background-color: #fff;
+}
+.white__block-left {
+  bottom: 0;
+  left: -50px;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+  background-color: #fff;
+}
+
 .btn__special-animation {
   content: "";
   position: relative;

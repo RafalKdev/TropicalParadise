@@ -3,6 +3,19 @@
   width: 100%;
   max-width: 1200px;
 }
+.white__block {
+  position: absolute;
+  height: 40px;
+  width: 60%;
+  background-color: $pure-white;
+
+  &-left {
+    bottom: 0;
+    left: -50px;
+    transform: skew(45deg);
+    background-color: $pure-white;
+  }
+}
 .btn__special-animation {
   content: "";
   position: relative;
