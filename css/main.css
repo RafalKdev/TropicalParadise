@@ -17,6 +17,13 @@
           transform: skew(45deg);
   background-color: #fff;
 }
+.white__block-right {
+  top: 0;
+  right: -50px;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+  background-color: #fff;
+}
 
 .btn__special-animation {
   content: "";
@@ -301,7 +308,113 @@
 .dreams__title {
   margin-bottom: 0.5em;
 }
+.dreams__text {
+  font-size: 1.4rem;
+}
 
+@media (min-width: 576px) {
+  .dreams__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dreams__box-text {
+    width: 55%;
+  }
+  .dreams__box-text--right {
+    text-align: right;
+  }
+  .dreams__box-img {
+    width: 40%;
+  }
+  .dreams__box-img--right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .dreams__img {
+    margin-bottom: 0;
+    max-height: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .dreams__text {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .dreams__box {
+    margin: 5em 0;
+  }
+  .dreams__box-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .dreams__title {
+    font-size: 3.6rem;
+  }
+  .dreams__text {
+    font-size: 2.2rem;
+  }
+}
+.hero__img {
+  position: relative;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/water-sm.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10em 2em;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero__img-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 4.8rem;
+  margin-bottom: 0.5em;
+}
+.hero__img-text {
+  padding: 1em 0;
+}
+
+@media (min-width: 768px) {
+  .hero__img {
+    padding: 30em 2em;
+  }
+  .hero__img-text {
+    font-size: 2.2rem;
+  }
+  .hero__img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
+}
+@media (min-width: 992px) {
+  .hero__img {
+    padding: 40em 2em;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/water-bg.jpg");
+  }
+  .hero__img-title {
+    font-size: 7.2rem;
+  }
+  .hero__img hr {
+    width: 60%;
+    max-width: 900px;
+  }
+}
 *,
 *::before,
 *::after {

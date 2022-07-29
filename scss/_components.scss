@@ -15,6 +15,12 @@
     transform: skew(45deg);
     background-color: $pure-white;
   }
+  &-right {
+    top: 0;
+    right: -50px;
+    transform: skew(45deg);
+    background-color: $pure-white;
+  }
 }
 .btn__special-animation {
   content: "";

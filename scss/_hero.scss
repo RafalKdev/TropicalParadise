@@ -1,0 +1,44 @@
+.hero__img {
+  position: relative;
+  @include heroImages("../img/water-sm.jpg");
+  padding: 10em 2em;
+  text-align: center;
+  color: $pure-white;
+  overflow: hidden;
+
+  &-title {
+    font-family: "Dancing Script", cursive;
+    font-size: 4.8rem;
+    margin-bottom: 0.5em;
+  }
+  &-text {
+    padding: 1em 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__img {
+    padding: 30em 2em;
+    &-text {
+      font-size: 2.2rem;
+    }
+    hr {
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .hero__img {
+    padding: 40em 2em;
+    background-image: $blue-gradient, url("../img/water-bg.jpg");
+
+    &-title {
+      font-size: 7.2rem;
+    }
+    hr {
+      width: 60%;
+      max-width: 900px;
+    }
+  }
+}
