@@ -52,3 +52,45 @@
     }
   }
 }
+@media (min-width: 576px) {
+  .offers {
+    &__option {
+      display: flex;
+      margin: 2em 0;
+      width: 100%;
+
+      &-img {
+        width: 50%;
+        height: auto;
+
+        &--right {
+          order: 1;
+        }
+      }
+      &-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1.5rem;
+      }
+      &-heading {
+        text-align: center;
+        font-size: 3.6rem;
+        margin-bottom: 0.5em;
+      }
+      &-text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .offers {
+    background-image: $blue-gradient, url("../img/maldives-1920.jpg");
+
+    &-img {
+      object-fit: cover;
+      height: 300px;
+    }
+  }
+}

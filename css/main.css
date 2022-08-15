@@ -610,6 +610,102 @@
   background-color: #164dcc;
 }
 
+@media (min-width: 576px) {
+  .offers__option {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2em 0;
+    width: 100%;
+  }
+  .offers__option-img {
+    width: 50%;
+    height: auto;
+  }
+  .offers__option-img--right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .offers__option-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.5rem;
+  }
+  .offers__option-heading {
+    text-align: center;
+    font-size: 3.6rem;
+    margin-bottom: 0.5em;
+  }
+  .offers__option-text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .offers {
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/maldives-1920.jpg");
+  }
+  .offers-img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+}
+.reviews__box {
+  position: relative;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.1803921569);
+          box-shadow: 3px 3px 10px rgba(46, 46, 46, 0.1803921569);
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.reviews__box:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.reviews__box-img {
+  position: absolute;
+  top: 8%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.reviews__box-img img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.reviews__box-quote {
+  margin-bottom: 1em;
+  color: #1755e7;
+  font-size: 3rem;
+}
+.reviews__box-text {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+  color: #2e2e2e;
+}
+
+@media (max-width: 767px) {
+  .reviews.section__padding {
+    padding: 6em 0;
+  }
+}
 *,
 *::before,
 *::after {
