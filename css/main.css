@@ -854,4 +854,10 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
+}
+
+.black__bars-color,
+.black__bars-color::after,
+.black__bars-color::before {
+  background-color: #2e2e2e;
 }/*# sourceMappingURL=main.css.map */
