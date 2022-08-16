@@ -14,3 +14,11 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@mixin contactForm {
+  margin-bottom: 2em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.6rem;
+}
